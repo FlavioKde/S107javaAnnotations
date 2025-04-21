@@ -1,0 +1,43 @@
+{
+  "motorbikeList" : [ {
+    "name" : "Yamaha",
+    "model" : "YZF-R3",
+    "cc" : 321
+  }, {
+    "name" : "Kawasaki",
+    "model" : "Ninja 400",
+    "cc" : 399
+  }, {
+    "name" : "Suzuki",
+    "model" : "GSX-R750",
+    "cc" : 750
+  }, {
+    "name" : "Ducati",
+    "model" : "Panigale V2",
+    "cc" : 955
+  }, {
+    "name" : "BMW",
+    "model" : "S1000RR",
+    "cc" : 999
+  }, {
+    "name" : "Triumph",
+    "model" : "Speed Triple RS",
+    "cc" : 1160
+  }, {
+    "name" : "KTM",
+    "model" : "RC 390",
+    "cc" : 373
+  }, {
+    "name" : "Harley-Davidson",
+    "model" : "Iron 883",
+    "cc" : 883
+  }, {
+    "name" : "Aprilia",
+    "model" : "RS660",
+    "cc" : 659
+  }, {
+    "name" : "Honda",
+    "model" : "CBR600RR",
+    "cc" : 599
+  } ]
+}

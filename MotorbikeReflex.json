@@ -1,0 +1,31 @@
+{motorbikeList:[Motorbike: 
+name: Yamaha
+model: YZF-R3
+CC:321, Motorbike: 
+name: Kawasaki
+model: Ninja 400
+CC:399, Motorbike: 
+name: Suzuki
+model: GSX-R750
+CC:750, Motorbike: 
+name: Ducati
+model: Panigale V2
+CC:955, Motorbike: 
+name: BMW
+model: S1000RR
+CC:999, Motorbike: 
+name: Triumph
+model: Speed Triple RS
+CC:1160, Motorbike: 
+name: KTM
+model: RC 390
+CC:373, Motorbike: 
+name: Harley-Davidson
+model: Iron 883
+CC:883, Motorbike: 
+name: Aprilia
+model: RS660
+CC:659, Motorbike: 
+name: Honda
+model: CBR600RR
+CC:599]}
