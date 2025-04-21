@@ -23,7 +23,7 @@ This project explores **Java annotations**, **custom annotation creation**, and 
 - ✔ Eclipse / IntelliJ IDEA  
 - ✔ JDK & JRE  
 - ✔ Git & GitHub for version control
-- Maven
+- ✔ Maven
 
 ---
 
