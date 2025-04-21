@@ -29,10 +29,9 @@ This project explores **Java annotations**, **custom annotation creation**, and 
 ## 📋 REQUIREMENTS
 
 - ✔ Use **Eclipse** or **IntelliJ IDEA**  
-- ✔ Follow Sprint 0 best practices for all GitHub repositories  
-- ✔ Code in **English**  
+- ✔ Java Development Kit (JDK) 17+  
 - ✔ Allowed to use Java, Maven, or Gradle  
-- ✔ Ensure clean and maintainable code structure  
+- ✔ Ensure clean and maintainable code structure
 
 ---
 
