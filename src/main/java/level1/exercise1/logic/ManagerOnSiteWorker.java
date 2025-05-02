@@ -12,26 +12,23 @@ public class ManagerOnSiteWorker {
         this.onSiteWorkerList = new ArrayList<>();
     }
 
-    public List<OnSiteWorker> getOnSiteWorkerList() {
-        return onSiteWorkerList;
-    }
     public void loadClass() {
         onSiteWorkerList.add(new OnSiteWorker("Peter","Peterovich",23.45));
         onSiteWorkerList.add(new OnSiteWorker("Perinola", "Wilson",12.34));
         onSiteWorkerList.add(new OnSiteWorker("Capito","Charly",34.67));
         onSiteWorkerList.add(new OnSiteWorker("Rosario","Di Gioia",12.45));
     }
-    public void calculateSalaryMethodWorker(){
+    public void printSalaryWorker(){
         if (onSiteWorkerList.isEmpty()){
             System.out.println("No on site worker available.");
             return;
         }
         for (OnSiteWorker onSiteWorker: onSiteWorkerList){
-            onSiteWorker.calculateSalary(40.00);
-            System.out.println("Worker: \n" +
-                    "name " +onSiteWorker.getName()+"\n"+
-                    "last name "+onSiteWorker.getLastName()+"\n"+
-                    "salary: "+ String.format("%.2f",onSiteWorker.calculateSalary(40.00)));
+            double salary = onSiteWorker.calculateSalary(40.00);
+            System.out.println("On Site Worker: \n" +
+                    "Name: " +onSiteWorker.getName()+"\n"+
+                    "Last name: "+onSiteWorker.getLastName()+"\n"+
+                    "Salary: "+ String.format("%.2f", salary));
     }
 }
 }

@@ -11,7 +11,6 @@ public abstract class Worker {
         this.hourlyPrice = hourlyPrice;
 
     }
-    public abstract double calculateSalary(double hoursWorked);
 
     public String getName() {
         return name;
@@ -23,6 +22,11 @@ public abstract class Worker {
 
     public double getHourlyPrice() {
         return hourlyPrice;
+    }
+
+
+    public double calculateSalary(double hoursWorked){
+        return hoursWorked * hourlyPrice;
     }
 
     @Override

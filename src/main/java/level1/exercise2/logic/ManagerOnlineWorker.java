@@ -12,9 +12,6 @@ public class ManagerOnlineWorker {
         this.onlineWorkerList = new ArrayList<>();
     }
 
-    public List<OnlineWorker> getOnlineWorkerList() {
-        return onlineWorkerList;
-    }
 
     public void loadClass() {
         onlineWorkerList.add(new OnlineWorker("Carlos","Apple", 13.56));
@@ -28,26 +25,15 @@ public class ManagerOnlineWorker {
             return;
         }
         for (OnlineWorker onlineWorker: onlineWorkerList){
-            onlineWorker.calculateSalary(40.0);
-            System.out.println("Worker: \n" +
-                               "name " +onlineWorker.getName()+"\n"+
-                               "last name "+onlineWorker.getLastName()+"\n"+
-                                "salary: "+ String.format("%.2f",onlineWorker.calculateSalary(40.0)));
+            double salary = onlineWorker.calculateSalary(40.0);
+            System.out.println("On line Worker: \n" +
+                               "Name: " +onlineWorker.getName()+"\n"+
+                               "Last name: "+onlineWorker.getLastName()+"\n"+
+                                "Salary: "+ String.format("%.2f", salary));
         }
 
     }
-    @Deprecated
-    public int oldMethod(){
-        int number = 32;
 
-        return number;
-    }
-    @Deprecated
-    public int oldMethod2(){
-        int number = 32;
-
-        return number;
-    }
 
 
 }

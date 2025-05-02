@@ -1,6 +1,5 @@
 package level1.exercise2.dataClass;
 
-import level1.exercise2.dataClass.Worker;
 
 public class OnSiteWorker extends Worker {
     private static double gasoline = 35.0;
@@ -20,6 +19,15 @@ public class OnSiteWorker extends Worker {
         }
         return (getHourlyPrice() * hoursWorked) + gasoline;
 
+    }
+    @Deprecated(since = "0.03", forRemoval = true)
+    public boolean isServiceAvailable(){
+        return true;
+    }
+
+    @Deprecated(since = "0.1",forRemoval = true)
+    public void oldMethod(){
+        System.out.println("Another method is not in use");
     }
 
 }

@@ -12,9 +12,6 @@ public class ManagerOnSiteWorker {
         this.onSiteWorkerList = new ArrayList<>();
     }
 
-    public List<OnSiteWorker> getOnSiteWorkerList() {
-        return onSiteWorkerList;
-    }
     public void loadClass() {
         onSiteWorkerList.add(new OnSiteWorker("Peter","Peterovich",23.45));
         onSiteWorkerList.add(new OnSiteWorker("Perinola", "Wilson",12.34));
@@ -27,21 +24,13 @@ public class ManagerOnSiteWorker {
             return;
         }
         for (OnSiteWorker onSiteWorker: onSiteWorkerList){
-            onSiteWorker.calculateSalary(40.00);
-            System.out.println("Worker: \n" +
-                    "name " +onSiteWorker.getName()+"\n"+
-                    "last name "+onSiteWorker.getLastName()+"\n"+
-                    "salary: "+ String.format("%.2f",onSiteWorker.calculateSalary(40.00)));
+            double salary = onSiteWorker.calculateSalary(40.00);
+            System.out.println("On site Worker: \n" +
+                    "Name: " +onSiteWorker.getName()+"\n"+
+                    "Last name: "+onSiteWorker.getLastName()+"\n"+
+                    "Salary: "+ String.format("%.2f", salary));
     }
 }
-    @Deprecated(since = "0.03", forRemoval = true)
-    public boolean isServiceAvailable(){
-        return true;
-    }
-    @Deprecated(since = "0.1",forRemoval = true)
-    public boolean isServiceAvailableWorker(){
-        return false;
-    }
 
 }
 

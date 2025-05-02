@@ -7,11 +7,11 @@ public class MainWorker {
     public static void main(String[] args) {
         ManagerOnlineWorker managerOnlineWorker = new ManagerOnlineWorker();
         managerOnlineWorker.loadClass();
-        managerOnlineWorker.calcularSalaryMethod();
+        managerOnlineWorker.printSalaries();
         System.out.println("----------------------------------------------");
         ManagerOnSiteWorker managerOnSiteWorker = new ManagerOnSiteWorker();
         managerOnSiteWorker.loadClass();
-        managerOnSiteWorker.calculateSalaryMethodWorker();
+        managerOnSiteWorker.printSalaryWorker();
 
     }
 }

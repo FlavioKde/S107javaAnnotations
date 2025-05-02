@@ -2,6 +2,7 @@ package level3.exercise1.logic;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import level3.exercise1.exception.JsonSerializationException;
 import level3.exercise1.annotation.JsonSerializableField;
 
 import java.io.File;
@@ -12,7 +13,7 @@ import java.lang.reflect.Field;
 public class JsonSerializer {
 
 
-    public static void readAndSaveToFile(Object obj, String defaultPath) {
+    public static void readAndSaveToFile(Object obj)throws  JsonSerializationException {
 
         Class<?> objClass = obj.getClass();
         ObjectMapper mapper = new ObjectMapper();
@@ -31,15 +32,21 @@ public class JsonSerializer {
 
                     File file = new File(directory);
                     file.getParentFile().mkdirs();
-
+/*
                     try (FileWriter fileWriter = new FileWriter(directory)) {
                         fileWriter.write(json);
                         fileWriter.flush();
-                        System.out.println("JSON saved in: " + defaultPath);
+                        System.out.println("JSON saved in: " + directory);
+
+ */
+                    try (FileWriter fileWriter = new FileWriter(file)) {
+                        fileWriter.write(json);
+                        System.out.println("JSON saved in: " + file.getAbsolutePath());
+
                     }
 
                 } catch (IOException | IllegalAccessException e) {
-                    System.out.println("Error saving the field: " + e.getMessage());
+                    throw new JsonSerializationException("Error saving the field: " + e.getMessage());
                 }
             }
         }

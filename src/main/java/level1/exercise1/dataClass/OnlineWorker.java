@@ -1,6 +1,5 @@
 package level1.exercise1.dataClass;
 
-import level1.exercise1.dataClass.Worker;
 
 public class OnlineWorker extends Worker {
     private static final double internet = 16.3;

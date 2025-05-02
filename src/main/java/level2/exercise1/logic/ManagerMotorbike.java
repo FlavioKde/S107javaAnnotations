@@ -15,9 +15,6 @@ public class ManagerMotorbike {
         this.motorbikeList = new ArrayList<>();
     }
 
-    public List<Motorbike> getMotorbikeList() {
-        return motorbikeList;
-    }
     public void loadClass(){
 
         motorbikeList.add(new Motorbike("Yamaha", "YZF-R3", 321));

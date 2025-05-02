@@ -1,6 +1,5 @@
 package level2.exercise1.dataClass;
 
-import level2.exercise1.annotation.JsonSerializableField;
 
 
 public class Motorbike {
