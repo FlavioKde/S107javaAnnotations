@@ -1,18 +1,23 @@
 package level2.exercise1.dataClass;
 
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import level2.exercise1.annotation.JsonSerializableField;
 
 public class Motorbike {
-
+    @JsonProperty("name")
     private String name;
-
+    @JsonProperty("model")
     private String model;
-
+    @JsonProperty("CC")
     private int CC;
 
     public Motorbike(String name, String model, int CC){
+
         this.name = name;
+
         this.model = model;
+
         this.CC= CC;
     }
 
@@ -23,6 +28,7 @@ public class Motorbike {
     public String getModel() {
         return model;
     }
+
 
     public int getCC() {
         return CC;

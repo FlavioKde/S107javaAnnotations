@@ -1,5 +1,6 @@
 package level2.exercise1.logic;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import level2.exercise1.annotation.JsonSerializableField;
 import level2.exercise1.dataClass.Motorbike;
 
@@ -8,7 +9,7 @@ import java.util.List;
 
 @JsonSerializableField(directory = "src/main/resources/Motorbike.json")
 public class ManagerMotorbike {
-
+    @JsonProperty("motorbikeList")
     private List<Motorbike>motorbikeList;
 
     public ManagerMotorbike(){
